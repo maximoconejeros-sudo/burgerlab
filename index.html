@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Burger Lab — Hamburguesas de laboratorio</title>
+<meta name="description" content="Burger Lab: fórmulas de hamburguesa perfeccionadas en Curicó, Chile." />
+<link rel="icon" href="data:image/png;base64,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" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#151009;
+    --bg-light:#fff6e8;
+    --mustard:#f5a300;
+    --red:#c1272d;
+    --cream:#ffe9c7;
+    --soft:#ecdcc4;
+    --ink:#151009;
+    --line: rgba(236,220,196,0.14);
+  }
+  *{box-sizing:border-box}
+  html,body,#root{background:var(--bg); margin:0; padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Kanit', sans-serif; color:var(--soft); overflow-x:clip}
+  a{color:inherit; text-decoration:none}
+  img{max-width:100%; display:block}
+  .wrap{overflow-x:clip}
+
+  .hero-heading{
+    background: linear-gradient(180deg, #ffd48a 0%, var(--red) 70%, #6e1418 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent;
+  }
+
+  .fade{opacity:0; transform:translateY(30px); transition: opacity .8s cubic-bezier(.25,.1,.25,1), transform .8s cubic-bezier(.25,.1,.25,1);}
+  .fade.in{opacity:1; transform:none}
+  .fade.dx{transform:translateX(-80px)}
+  .fade.dx.in{transform:none}
+  .fade.dxr{transform:translateX(80px)}
+  .fade.dxr.in{transform:none}
+
+  /* ---------------- HERO ---------------- */
+  .hero{
+    min-height:100svh; display:flex; flex-direction:column; justify-content:space-between;
+    position:relative; overflow:clip;
+    padding-bottom: 30px;
+    background:
+      radial-gradient(1200px 600px at 50% 110%, rgba(245,163,0,0.16), transparent 60%),
+      var(--bg);
+  }
+  nav{
+    display:flex; justify-content:space-between; align-items:center;
+    padding: 22px 24px 0; gap:14px; flex-wrap:wrap;
+  }
+  .nav-logo{display:flex; align-items:center; gap:10px}
+  .nav-logo img{width:38px; height:38px; border-radius:50%; display:block; object-fit:cover}
+  .nav-logo span{font-weight:700; letter-spacing:0.06em; text-transform:uppercase; font-size:15px; color:var(--cream)}
+  .nav-links{display:flex; gap:22px}
+  .nav-links a{
+    color:#ecdcc4; font-weight:500; text-transform:uppercase; letter-spacing:0.08em;
+    font-size:13px; transition:opacity .2s;
+  }
+  @media(max-width:700px){
+    .nav-links{
+      order:3; width:100%; justify-content:center; flex-wrap:wrap; gap:12px 20px;
+      padding-top:12px; border-top:1px solid var(--line); margin-top:12px;
+    }
+  }
+  }
+  @media(min-width:768px){ .nav-links a{font-size:16px} }
+  .nav-links a:hover{opacity:0.65}
+
+  .hero-mid{
+    position:relative; flex:1; display:flex; align-items:center; justify-content:center;
+    padding: 10px 4vw;
+  }
+  .hero-heading-wrap{overflow:hidden; width:100%; text-align:center}
+  .hero-heading-wrap h1{
+    font-weight:900; text-transform:uppercase; letter-spacing:-0.02em; line-height:0.86;
+    white-space:nowrap; margin:0;
+    font-size: 15vw;
+  }
+  @media(min-width:640px){ .hero-heading-wrap h1{font-size:14vw} }
+  @media(min-width:1024px){ .hero-heading-wrap h1{font-size:11.5vw} }
+
+  .magnet{ position:relative; display:inline-block; will-change:transform; width:100%; height:100%; }
+  .hero-portrait{
+    position:absolute; left:50%; top:52%; transform:translate(-50%,-50%);
+    width: min(64vw, 340px); height: min(64vw, 340px);
+    z-index:5; pointer-events:none; perspective:1200px;
+    border-radius:50%;
+    background: radial-gradient(circle at 40% 30%, rgba(245,163,0,0.25), rgba(245,163,0,0.04) 70%);
+  }
+  @media(min-width:640px){ .hero-portrait{width:min(32vw,380px); height:min(32vw,380px)} }
+
+  .burger-rig{
+    position:absolute; inset:0;
+    animation: idle-spin 14s linear infinite;
+    transform-style:preserve-3d;
+  }
+  @keyframes idle-spin{
+    0%{ transform: rotateY(0deg) rotateX(4deg); }
+    100%{ transform: rotateY(360deg) rotateX(4deg); }
+  }
+  .layer{
+    position:absolute; left:50%; top:50%;
+    transform: translate(-50%,-50%);
+    width:78%;
+    filter: drop-shadow(0 14px 18px rgba(0,0,0,0.35));
+    animation: bob 3.6s ease-in-out infinite;
+  }
+  @keyframes bob{ 0%,100%{ margin-top:0px } 50%{ margin-top:-8px } }
+  .layer svg{ display:block; width:100%; height:auto }
+
+  .hero-bottom{
+    display:flex; justify-content:space-between; align-items:flex-end; gap:16px;
+    padding: 18px 24px 4px; flex-wrap:wrap;
+  }
+  .hero-bottom p{
+    color:var(--soft); font-weight:300; text-transform:uppercase; letter-spacing:0.05em;
+    line-height:1.35; max-width:230px; margin:0;
+    font-size: clamp(0.72rem, 1.3vw, 1.05rem);
+  }
+  .icon-row{display:flex; gap:10px}
+  .icon-btn{
+    position:relative;
+    width:52px; height:52px; border-radius:999px; display:flex; align-items:center; justify-content:center;
+    border:2px solid rgba(236,220,196,0.5); color:var(--cream); background:rgba(255,255,255,0.02);
+    transition: background .2s, transform .2s, border-color .2s;
+    cursor:pointer;
+  }
+  .icon-btn.cart-btn{
+    background: var(--mustard); border-color:var(--mustard); color:#1c1109;
+  }
+  .icon-btn.cart-btn:hover{ background:#ffb733; transform:translateY(-3px) }
+  .cart-badge{
+    position:absolute; top:-6px; right:-6px; min-width:20px; height:20px; padding:0 5px;
+    border-radius:999px; background:var(--red); color:#fff; font-size:11px; font-weight:700;
+    display:flex; align-items:center; justify-content:center; line-height:1;
+    box-shadow:0 0 0 2px var(--bg);
+    transition: transform .25s cubic-bezier(.34,1.56,.64,1);
+  }
+  .cart-badge.bump{ transform:scale(1.35) }
+  .cart-badge.hidden{ display:none }
+
+  .cart-toast{
+    position:fixed; left:50%; bottom:28px; transform:translateX(-50%) translateY(20px);
+    background:#1c1109; border:1px solid var(--mustard); color:var(--cream);
+    padding:12px 22px; border-radius:999px; font-size:13px; font-weight:600;
+    display:flex; align-items:center; gap:8px; z-index:300;
+    opacity:0; pointer-events:none; transition: opacity .25s ease, transform .25s ease;
+    box-shadow:0 12px 30px rgba(0,0,0,0.4);
+  }
+  .cart-toast.show{ opacity:1; transform:translateX(-50%) translateY(0) }
+  .cart-toast .tick{ color:var(--mustard); font-weight:900 }
+  .icon-btn:hover{ background:rgba(236,220,196,0.1); transform:translateY(-3px); border-color:var(--cream) }
+  .icon-btn.solid{
+    background: linear-gradient(135deg, var(--red) 0%, #7a1f1f 100%);
+    border:none;
+    box-shadow: 0 4px 4px rgba(193,39,45,0.25), 4px 4px 12px rgba(193,39,45,0.35) inset;
+  }
+  .icon-btn.camera{
+    border-color: var(--mustard); color: var(--mustard);
+  }
+  .icon-btn.camera:hover{ background:rgba(245,163,0,0.12) }
+  .icon-btn svg{width:22px; height:22px}
+
+  .cta-pill{
+    display:inline-flex; align-items:center; gap:8px;
+    padding: 14px 26px; border-radius:999px;
+    background: linear-gradient(123deg, #7a1f1f 7%, var(--red) 37%, #b3450f 72%, var(--mustard) 100%);
+    box-shadow: 0px 4px 4px rgba(193,39,45,0.25), 4px 4px 12px rgba(193,39,45,0.35) inset;
+    outline: 2px solid rgba(255,255,255,0.55); outline-offset:-3px;
+    color:#fff; font-weight:500; text-transform:uppercase; letter-spacing:0.08em; font-size:13px;
+  }
+
+  .scroll-tag{
+    position:absolute; bottom:96px; left:50%; transform:translateX(-50%);
+    font-size:11px; letter-spacing:0.14em; text-transform:uppercase; opacity:0.5;
+    display:flex; flex-direction:column; align-items:center; gap:6px;
+  }
+  .scroll-tag .bar{width:1px; height:24px; background:var(--cream); opacity:0.5; animation:hintbar 1.8s ease-in-out infinite}
+  @keyframes hintbar{0%,100%{height:24px} 50%{height:9px}}
+
+  /* ---------------- MARQUEE ---------------- */
+  .marquee{ background:var(--bg); padding:96px 0 40px; }
+  .m-row{ display:flex; gap:12px; will-change:transform; }
+  .m-tile{
+    flex:0 0 auto; width:280px; height:180px; border-radius:22px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px;
+    font-weight:600; text-transform:uppercase; letter-spacing:0.04em; font-size:14px; text-align:center;
+    color:#1c1109;
+  }
+  .m-tile .emoji{font-size:44px}
+  @media(min-width:640px){ .m-tile{width:340px; height:220px} .m-tile .emoji{font-size:56px} }
+
+  /* ---------------- ABOUT ---------------- */
+  .about{
+    position:relative; min-height:100svh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:56px; padding: 90px 5vw; text-align:center; overflow:clip;
+    background: var(--bg); color: #fff8ec;
+  }
+  .about .corner{ position:absolute; opacity:0.9; }
+  .about h2{
+    font-weight:900; text-transform:uppercase; line-height:0.9; margin:0;
+    font-size: clamp(2.6rem, 11vw, 130px);
+  }
+  .about-text{
+    max-width:600px; color:#fff8ec; font-weight:500; line-height:1.6;
+    font-size: clamp(1.05rem, 2vw, 1.35rem);
+  }
+  .about-stats{
+    display:flex; gap:40px; flex-wrap:wrap; justify-content:center; margin-top:8px;
+  }
+  .about-stats div{ display:flex; flex-direction:column; align-items:center; gap:4px }
+  .about-stats b{ color:var(--mustard); font-size:1.8rem; font-weight:800 }
+  .about-stats span{ font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:#fff8ec; opacity:0.7 }
+
+  /* ---------------- PROCESS ---------------- */
+  .process{
+    background:var(--bg-light); color:var(--ink); border-radius:44px 44px 0 0;
+    padding: 80px 5vw 100px;
+  }
+  @media(min-width:768px){ .process{border-radius:60px 60px 0 0; padding:110px 6vw 130px} }
+  .process h2{
+    font-weight:900; text-transform:uppercase; text-align:center; margin:0 0 56px;
+    font-size: clamp(2.6rem, 11vw, 130px); color:var(--ink);
+  }
+  .p-item{
+    display:flex; gap:18px; align-items:flex-start; padding:28px 0;
+    border-bottom:1px solid rgba(21,16,9,0.14); max-width:920px; margin:0 auto;
+  }
+  .p-item .num{
+    font-weight:900; color:var(--ink); line-height:0.85;
+    font-size: clamp(2.4rem, 8vw, 100px); min-width:1.4em;
+  }
+  .p-item .body h3{ margin:0 0 6px; text-transform:uppercase; font-weight:600; font-size: clamp(1rem,2vw,1.6rem) }
+  .p-item .body p{ margin:0; opacity:0.62; font-weight:300; line-height:1.5; font-size: clamp(0.85rem,1.5vw,1.05rem); max-width:44em }
+
+  /* ---------------- MENU ---------------- */
+  .menu-stack-section{
+    background:var(--bg); border-radius:44px 44px 0 0; margin-top:-30px; position:relative; z-index:5;
+    padding: 90px 5vw 100px;
+  }
+  @media(min-width:768px){ .menu-stack-section{border-radius:60px 60px 0 0} }
+  .menu-stack-section > h2{
+    font-weight:900; text-transform:uppercase; text-align:center; margin:0 0 28px;
+    font-size: clamp(2.6rem, 11vw, 130px);
+  }
+  .quick-nav{
+    display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin:0 0 56px;
+  }
+  .quick-nav a{
+    border:2px solid var(--mustard); color:var(--mustard); border-radius:999px;
+    padding:10px 20px; font-weight:600; font-size:13px; text-transform:uppercase; letter-spacing:0.04em;
+    transition: background .2s, color .2s;
+  }
+  .quick-nav a:hover{ background:var(--mustard); color:#1c1109 }
+  .menu-jump-target{ scroll-margin-top:90px }
+
+  .menu-cat{
+    max-width:900px; margin:0 auto 48px; background:rgba(236,220,196,0.035);
+    border:1px solid var(--line); border-radius:28px; padding:30px 26px;
+    box-shadow: 0 24px 50px rgba(0,0,0,0.22);
+  }
+  @media(min-width:700px){ .menu-cat{ padding:40px 44px } }
+  .menu-cat + .menu-cat{ margin-top:0 }
+  .menu-cat-head{
+    display:flex; justify-content:space-between; align-items:flex-end; gap:16px; flex-wrap:wrap;
+    border-bottom:2px solid var(--mustard); padding-bottom:14px; margin-bottom:8px;
+  }
+  .menu-cat-head h3{
+    margin:0; font-weight:900; text-transform:uppercase; color:var(--mustard);
+    font-size:clamp(2rem,6.5vw,3.6rem); line-height:0.9;
+  }
+  .price-tags{ display:flex; flex-direction:column; align-items:flex-end; gap:4px; }
+  .price-tag{ display:flex; align-items:baseline; gap:8px; font-weight:700; color:var(--cream) }
+  .price-tag .lbl{ font-size:11px; opacity:0.55; text-transform:uppercase; letter-spacing:0.1em; font-weight:400 }
+  .price-tag .amt{ font-size:1.3rem; color:var(--mustard) }
+
+  .menu-item{
+    padding:22px 4px; border-top:1px solid var(--line);
+    opacity:0; transform:translateY(14px);
+    transition: opacity .6s cubic-bezier(.25,.1,.25,1), transform .6s cubic-bezier(.25,.1,.25,1), background .2s;
+    border-radius:14px;
+  }
+  .menu-item.in{ opacity:1; transform:none }
+  .menu-item:hover{ background:rgba(236,220,196,0.04) }
+  .menu-item:first-of-type{ border-top:none }
+  .mi-head{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:10px }
+  .menu-item .badge{
+    display:inline-block; background:var(--mustard); color:#1c1109; font-weight:600;
+    padding:5px 18px; border-radius:999px; text-transform:uppercase; font-size:13px;
+  }
+  .menu-item p{ margin:0; opacity:0.82; font-weight:300; line-height:1.55; max-width:640px }
+  .mi-add{ display:flex; gap:8px; flex-wrap:wrap }
+  .add-btn{
+    background:transparent; border:2px solid var(--cream); color:var(--cream);
+    border-radius:999px; padding:7px 14px; font-size:12px; font-weight:600;
+    cursor:pointer; transition: background .2s, color .2s, transform .1s;
+    font-family:'Kanit', sans-serif;
+  }
+  .add-btn:hover{ background:var(--cream); color:#1c1109 }
+  .add-btn:active{ transform:scale(0.94) }
+  .add-btn.small{
+    width:26px; height:26px; padding:0; border-width:1px; font-size:15px; line-height:1;
+    display:inline-flex; align-items:center; justify-content:center;
+  }
+  .pr-right{ display:flex; align-items:center; gap:10px; flex-shrink:0 }
+
+  .extras-wrap{
+    display:grid; gap:40px; grid-template-columns:1fr; max-width:900px; margin:64px auto 0;
+    padding-top:48px; border-top:1px solid var(--line);
+  }
+  @media(min-width:700px){ .extras-wrap{ grid-template-columns:1fr 1fr; gap:60px } }
+  .extras-col{
+    background:rgba(236,220,196,0.03); border:1px solid var(--line); border-radius:24px; padding:28px;
+  }
+  .extras-col h3{
+    font-weight:700; text-transform:uppercase; color:var(--mustard); letter-spacing:0.04em;
+    font-size:1.3rem; margin:0 0 18px;
+  }
+  .price-list{ display:grid; gap:9px }
+  .price-row{
+    display:flex; justify-content:space-between; align-items:center; gap:10px;
+    font-size:0.92rem; font-weight:300; border-bottom:1px dotted var(--line); padding-bottom:6px;
+  }
+  .price-row b{ color:var(--mustard); font-weight:600; white-space:nowrap }
+
+  .note-tag{
+    text-align:center; margin:56px auto 0; max-width:fit-content;
+    border:2px solid var(--cream); border-radius:999px; padding:12px 26px;
+    text-transform:uppercase; font-weight:600; letter-spacing:0.06em; font-size:13px;
+  }
+
+  footer{ text-align:center; padding:56px 6vw 36px; background:var(--bg) }
+  .footer-contact{
+    display:flex; gap:36px; flex-wrap:wrap; justify-content:center;
+    max-width:700px; margin:0 auto 28px; padding-bottom:28px; border-bottom:1px solid var(--line);
+  }
+  .footer-contact > div{ display:flex; flex-direction:column; align-items:center; gap:6px }
+  .fc-label{ font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--mustard); font-weight:600 }
+  .footer-contact a{ color:#fff8ec; font-size:14px; font-weight:500 }
+  .footer-contact a:hover{ color:var(--mustard) }
+  .fc-pending{ color:#fff8ec; opacity:0.55; font-size:13px; font-style:italic }
+  .footer-copy{ font-size:12px; opacity:0.5; margin:0 }
+
+  /* ---------------- REVIEWS ---------------- */
+  .reviews{
+    background:var(--bg); padding:40px 5vw 110px; text-align:center;
+  }
+  .reviews h2{
+    font-weight:900; text-transform:uppercase; margin:0 0 12px;
+    font-size: clamp(2.6rem, 11vw, 130px);
+  }
+  .reviews-sub{ opacity:0.6; font-weight:300; margin:0 0 44px }
+  .reviews-marquee{
+    width:100%; max-width:1400px; margin:0 auto 40px; overflow:hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  }
+  .reviews-track{
+    display:flex; gap:20px; width:max-content;
+    animation: reviews-scroll 55s linear infinite;
+  }
+  .reviews-marquee:hover .reviews-track{ animation-play-state:paused }
+  @keyframes reviews-scroll{
+    from{ transform:translateX(0) }
+    to{ transform:translateX(-50%) }
+  }
+  .review-card{
+    background:rgba(236,220,196,0.03); border:1px solid var(--line); border-radius:22px; padding:26px;
+    flex:0 0 auto; width:min(78vw, 300px); text-align:left;
+  }
+  .review-card .stars{ color:var(--mustard); letter-spacing:2px; margin-bottom:12px; font-size:15px }
+  .review-card p{ margin:0 0 16px; font-weight:300; line-height:1.5; opacity:0.9 }
+  .review-card .who{
+    display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;
+    font-weight:700; font-size:15px; opacity:0.95; text-transform:none; color:var(--mustard);
+    border-top:1px solid var(--line); padding-top:12px; margin-top:4px;
+  }
+  .review-card .who::before{ content:"— " }
+  .review-card .date{ font-size:11px; opacity:0.5; text-transform:none; letter-spacing:0; color:var(--soft); font-weight:400 }
+  .reviews-cta{ display:inline-flex }
+
+  /* ---------------- OPINA (review + photo) ---------------- */
+  .opina-section{ padding:20px 5vw 110px; text-align:center; background:var(--bg) }
+  .opina-section h2{
+    font-weight:900; text-transform:uppercase; margin:0 0 12px;
+    font-size: clamp(2.6rem, 11vw, 130px);
+  }
+  .opina-gmaps-btn{
+    display:inline-flex; align-items:center; gap:10px; margin-top:18px; cursor:pointer;
+  }
+
+  /* ---------------- MAP ---------------- */
+  .map-section{ padding:0 5vw 110px; text-align:center }
+  .map-section h2{
+    font-weight:900; text-transform:uppercase; margin:0 0 12px;
+    font-size: clamp(2.6rem, 11vw, 130px);
+  }
+  .map-card{
+    position:relative; display:block; max-width:900px; margin:0 auto;
+    border-radius:28px; overflow:hidden; border:1px solid var(--line); background:#241609;
+    transition: transform .3s ease;
+  }
+  .map-card:hover{ transform:translateY(-4px) }
+  .map-card .map-embed{ width:100%; height:420px; display:block; border:0 }
+  .map-card .map-overlay{
+    position:absolute; inset:auto 0 0 0; padding:20px;
+    background:linear-gradient(180deg, transparent, rgba(0,0,0,0.72));
+    color:#fff; font-weight:600; text-align:left; font-size:15px; pointer-events:auto;
+  }
+
+  /* ---------------- PAYMENT ---------------- */
+  .pay-section{ padding:20px 5vw 120px; text-align:center; background:var(--bg); color:#fff8ec }
+  .pay-section h2{
+    font-weight:900; text-transform:uppercase; margin:0 0 44px;
+    font-size: clamp(2.6rem, 11vw, 130px);
+  }
+  .pay-grid{
+    display:grid; gap:20px; max-width:1000px; margin:0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    text-align:left;
+  }
+  .pay-card{
+    background:rgba(236,220,196,0.05); border:1px solid var(--line); border-left:3px solid var(--mustard);
+    border-radius:22px; padding:28px;
+  }
+  .pay-icon{ font-size:32px; margin-bottom:12px }
+  .pay-card h3{ margin:0 0 8px; text-transform:uppercase; font-weight:700; font-size:1.05rem; color:#fff8ec; letter-spacing:0.03em }
+  .pay-card p{ margin:0; font-weight:300; color:#fff8ec; opacity:0.82; line-height:1.5; font-size:0.92rem }
+  .pay-bank{ font-weight:400 !important; opacity:0.95 !important }
+
+  /* ---------------- CART ---------------- */
+  .cart-overlay{
+    position:fixed; inset:0; z-index:200; background:rgba(0,0,0,0.55);
+    display:flex; justify-content:flex-end;
+    opacity:0; pointer-events:none; transition: opacity .3s ease;
+  }
+  .cart-overlay.open{ opacity:1; pointer-events:auto }
+  .cart-panel{
+    width:min(400px, 92vw); height:100%; background:#1c1109; border-left:1px solid var(--line);
+    padding:26px 22px; display:flex; flex-direction:column;
+    transform:translateX(100%); transition: transform .35s cubic-bezier(.25,.1,.25,1);
+  }
+  .cart-overlay.open .cart-panel{ transform:translateX(0) }
+  .cart-panel-head{ display:flex; justify-content:space-between; align-items:center; margin-bottom:20px }
+  .cart-panel-head h3{ font-size:1.4rem; text-transform:uppercase }
+  .cart-close{
+    background:none; border:1px solid var(--line); color:var(--cream); border-radius:999px;
+    width:34px; height:34px; cursor:pointer; font-size:15px;
+  }
+  .cart-items{ flex:1; overflow-y:auto; display:flex; flex-direction:column; gap:14px; margin-bottom:16px }
+  .cart-row{
+    display:flex; justify-content:space-between; align-items:center; gap:10px;
+    border-bottom:1px solid var(--line); padding-bottom:12px;
+  }
+  .cart-row .ci-name{ font-size:0.92rem; font-weight:500; flex:1 }
+  .cart-row .ci-price{ font-size:0.82rem; opacity:0.6 }
+  .cart-qty{ display:flex; align-items:center; gap:8px }
+  .cart-qty button{
+    width:24px; height:24px; border-radius:999px; border:1px solid var(--line);
+    background:none; color:var(--cream); cursor:pointer; font-size:14px; line-height:1;
+  }
+  .cart-empty{ text-align:center; opacity:0.5; font-size:0.9rem; margin:30px 0 }
+  .cart-empty.hidden{ display:none }
+  .cart-total-row{
+    display:flex; justify-content:space-between; align-items:center;
+    border-top:2px solid var(--mustard); padding-top:14px; margin-bottom:16px;
+    font-weight:700; font-size:1.15rem;
+  }
+  .cart-total-row b{ color:var(--mustard) }
+  .cart-checkout{ width:100%; justify-content:center; text-align:center }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <section class="hero" id="top">
+    <nav>
+      <a class="nav-logo" href="#top">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwMDAgQDAwMEBAQFBgoGBgUFBgwICQcKDgwPDg4MDQ0PERYTDxAVEQ0NExoTFRcYGRkZDxIbHRsYHRYYGRj/2wBDAQQEBAYFBgsGBgsYEA0QGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBj/wAARCADwAPADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2iiiiv41P2wKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiux0r4dapquj2+orfWsKToHVGDMcHpnFellmUYzM5ung6bm0ru1tvmcuKxtDCRUq8rJnOaVo+o61em1023M0gXc3IUKPUk9KmOhXdt4mh0bVWWweRwrSSEFVB/iz0Irro9E1/4fW82uQXFldw4WOaEhhkE8EfQn9a52a41Tx14vhRvIjmlXYi8hI1UEn3PevoK+R0MDSpUMRCf1yUl7jtyyi3ZWa77Xve99Op5tPMKmInOpSlH2CT97qnbs+3oUde0uHR9cksIL+O9RAD5qY79jgkZFZtd9/wAKq1THGqWf4I1cnrmi3Ogaw+nXUkcjqocNGeCD0+lcGd8P4/BOWKrYZ0qbeivdK+yvdv7zowGZYevalCrzyS10tfzM2iip7ayvbwMbSzuJwv3vKjL4+uBXz8Kcqj5YK78j0pSUVeTsQUVcfSNWjQu+lXqqBkkwPgfpVPqcVVShVpW9pFr1VhRqQn8LuFFWZ9O1C1i826sLmGPON8kTKM+mSKjgtrm6lMdrbyzuBkrEhY49cCm8PVU1TcXzPpbUFUg48yehFRVn+z9Q+1/ZfsFz54G4xeU24D1xjOKkbR9XVSzaVfADqTbv/hVrB13e1N/cyXXpreS+8pUUEEEgggjgg9qK5mraGoUVYisb6eHzobK5kj670iZh+YFVyCCQRgjgg9q0nRnBKUotJkxnGTsmFFWbfT7+7jMlrY3M6A4LRRMwz6ZAqX+xdZ/6BN//AOA7/wCFaRwdeaUo0216Mh16adnJfeUaKsnT9QF2LU2NyJyu4ReU24j1xjOKkOjawqknSb4Af9O7/wCFNYOu72pvTyYOvTX2l95SopSCrFWBDA4IIwRSVztW0ZqncKKKKQBRRRQAUUUUAFWrfUdSt41gtb+7iTPyxxSsBn2ANP0rS7zWdVi0+xj3SyHqeiDuxPoK9NW18M/DzTEuLgfadQcfKxAMjnvtB+4vv/OvquHsgxOOjPFOr7GjH4pvT5Lu/L9bHkZlmNKg1R5Oeo9o/q+w/wAQeafgrGLsyiUwW/mFwS+dy5znnNcz4Yt9Htvilp6aJfTXduYnLPKm0htjZHQe1Z+v+NtW8Rwmw8qK3tZGH7mPlm54BY++OmK0ZfBuv+FbBfEdtf25uLUb3jVT8oxg8nhuvNfX4vMY5lmFPGYCi6tLDqnzTtaSUG2+VNrddGr6dDxKOGeFw0qOInyTqc1o9PeSWunQl+I17qtn4rjNvd3lvA9umPLkZELZOenGelcLLLLPM0s0rySMcs7sWJ+pNek6T8QrHVV/s3xPZQIkny+cBmI/7yn7v1/lWX4x8DjSoW1bR9z2PWSLO4xA9we6/wAq8ziPK5ZtGrm+W1va073lDVSh8u3n+auzryzFrBuGDxVPklsn0l8zh69O+E3/AB7at/vxfyavMa9O+E3/AB7at/vxfyavP8PP+R9R9Jf+ks6uJP8AkXz+X5o2T4+09fFx0CSzuBJ9o+zeaCpXdnAOM5xmub+JOi2lnqljqtrGsb3EnlzKowGYYIbHr1z+Fde2teDYfELQNNYx6iJdhJhw2/p97b1981znxRt7ln0u8EubVZDGY8dHPOfyGPw96/S+I4zxGT4p16sazjJOPKleHvLR2e6V79T5XLGqeNpckXC6d7397ToafxO/5Ehf+vmP+TVyfwv/AORxn/69G/8AQlrrPibz4HUj/n5j/wDZq5P4XD/isZz2+yN/6EtePnn/ACWWF9I/+3HbgP8AkR1fV/odTF/yXOf/ALB4/pV3X/HNh4f1xdNu7S5fKLIZI8EAEntnPaqUJ/4vnP8A9g8f0qx4i8C2/iHxAuoz6jLCvlrGYkjByAT3J46+lfRxeZLCYn+yknV9vPe1rX13/wCHPNawrq0vrd+X2a27md4+0Sw1Lwv/AMJJYqnnRqshkQY82M46+pGQc1j/AA78K2upGTWdSiWWGJ9kMTDKsw6sR3A4wPWt3x7qllo/g9fD1vgSzRrEkYOSkQIyT+WKs+Acv8NUWE/vN0w467txx/SvKq5bgMVxSuaKcoU+aaWzmnb8mn91zrhisRRyl2bScrJ9eX+kMvviPoGnag1jHFcXCRtsaWFRsBHUDJGce1cR448QaRrepRHTLaP92Pnuyu1pc9seg9Tzn9a/gy50qx8TNJr3krAIWQiePeA+R2weeDXrVla+GdT00X1jYWEtu2cSC2UA44PVa4sNVzDi7BVKM8RTgm/g5bySXzvbbW1/PU3qww+TV4zjTlKy3vo2/l+BgfC448HT/wDX23/oK1DN8VNMhuJIm0u7JRipIdOcHHrVj4Y4PhS6xjH2x8f98rViTXvh6szrI+m7wxDZtec55/hr2sDVxFHJMEsPi4UPd1c7a+l2tjhrxpzx1f2lGU9fs309bGFomvweI/i5b39vBJCq2bxbZCCcjJzx9a6TxF42svDmsRWF1Z3Eu+MSb4iMAEkdCfasDTLvRr34w20uhmA232FlPkx7Bu5zxgc9K2vE3giHxJrcV9NqEkASMRGNIwcgEnOSeOvpU5dUzR5biJZfONSt7Z+8rcrVo3a1sPExwixNNYmLjDk21ut7FDxxo2na14RPiOxCGeOMTLKox5sfcH8OR6YryWvXvGuo2Ph/wONBtiBLNEIIos5IjHBY/hx9TXkNfn3iPGhHMociSqci57bc3+dvwsfR8MOo8M+a/Ld8t+wUUUV+fH0gUUUUAFFFFAHqnw+tLXSPBd14huhgy7nLntGmeB9SCfyrz+616W/8U/21fwxXX7zd9nlPybR0T6D+ddp4W8ZW0XhiHRpNCvr1oEKN9niEqsMk8jt16Vq/8JDpn/Qian/4ALX7DVw+FzDLMHh8Ni1TjTSbXJJ3nu29LOzv97PiYVauHxVepVo8zk2k+ZK0f+GseUXdzHc381zHDFbLI5YRRH5Uz2Fal74u1/UdIGmXepeZb4AYbVDOB0DEcmvQ/wDhIdM/6ETU/wDwAWj/AISHTP8AoRNT/wDABa82nw3Gl7T2eZcqn8SUJpP1S0t5HXLM3Pl5sNfl2vJOx51NbeHl8IQ3UOpyNqzPiS2I+UDJz29Mc55ruPhvrn9oadP4fvmWYwpmIPzuiPBU+wz+R9qu/wDCRaZ/0Imp/wDgAtSQ+KbK3l8y38FavE+MbkslU/mK9rJsvw2WY2niqeJioqPLKKpzSku7vfV79rrY4MbiKuKoSpSpNtu6blHT020PL9e03+yPEt7pozshkITP908r+hFd18KZY47fVfMkVcvHjcQOzVxninU21fxXdXzWktoW2r5Mow42qByPWtjwP4U07xLDfNfS3CGBkC+UwGcg5zkH0r5Lh5ujxK/7OgppSnypvlVrS62dtPI9nMffytfWZW0jdpX108+53k3hPwtLrL6vc4adpfOYtcfKWznpnp7VyHxG8TWWqGDSdNmE0cLmSWVDlS2CAAe+MnmuQ1uxh07xHfWEJZooJmjUvySB61RrbPeMHOlXy/D4aNFyl77Tu20/RdeupGX5Kozp4mpVc7L3U+l16s9e0HxJovinw6uk600IuNgSWGY7RJjoyn9eOQauxJ4R8E2M08UkUTSDn955ksmOigZz/Sue8PfDrStT8MWd/fzXazTp5hVGUKATx1B7YrlvGXh2Dw5r6Wtq0jwSQiRWkILZyQRkAelfV4jN81y7LaWZYzC05zUUo1L+8lJaXVr+tpLV+Z49LBYTE4qWFo1ZKLbvHo7dnf7tDf8AB+sNq/xUutUuSsfnQPtUn7qgqFH5CrXivxRfaL8RreW3vJHs0iRpLdXyjglg3HTOP5Cs/wAF+C9L8R6FLe3010kiTmMCJgBgAHuD610Evws0MwsIb2/jfsxZWA/DArDLcLn+KyiLw0VzTn7Xn57Ntu9nG1tX52NMTVy6ljWqrdox5Lcun33/AEF8d6Za6/4Xj1ewliknt081CrDMkR5I/qPofWuV8C+LotBnksb8kWM7b/MAz5TdM49Dxn6Vga7od1oGsvYXe1iBvSRRgSKehH+FZtfJZvxPiaWcLH06Psa8NJq902tNdFutN30ad9T2MFlVKeCeHlPnpy1Ttax7VP4d8Fa1cnVSlrKXO53in2q/uwBxWT4s8ZaZp2ivomgSRPKyeTugx5cC4wcEcE46Y6V5Vgegpa6sZx/KdGpDB4aFGdT4pLd9+i/G/wB+plR4cUZxdeq5xjsnt+b/AEPWfhhLFH4PnVpEU/a24LAfwrVuTwF4RlleV/MLOxY/6UepOfWvG6MD0owvG+GhgqOCxWCjVVNWTk/05XYKuQ1ZV516Vdw5n0X/AAT03TdL0zQvi/bW2nnZAbJnJeTd8xyOp+gpPGniW/0bx3YzWd5I1skKvJbq/wAknzMCCPXH9K8zwKK5KnGkoYSeFwdL2V6nOnF/Dtpay00/4BtHI1KtGrXnz2jyu6331vc9e8Z6fZ+JfCMep2Esck8KefCdwy6EZZfrjnHqK8h7UYFFeTxJnkM6xEcV7Lkna0rO/M112Vu3XSx2ZXl8sDTdLn5o3002CiiivnT0wooooAKQ/dOKWigD3CBZ9D8C2q+HNLS9l2RkRhwu/cBlye/rSpc+N3g8xtO0aNsf6trl8/mBiuD0XVvHOkeGluLSz+0aYqF0eZA4RfYgg49qy5fHfieW8+0f2u0fORHGqhB7Yxz+Nft9TjPB4ejRc1Wp3ikoKMVFJdU2tV21t5I+ChkderOai4S1fvNtv0dtj0i31Lx5PcvE+gadAqHHmS3LbW+mMk0271Tx3azIieH7C6DnG+C4YgfXOMVwd18R/Et1bCFbm2tj3kgjAY/iScfhS2fxI8SWtv5Tz2116POmWH4gjNY/67Zc37P6zX781ofda36F/wBhYr4/ZU/S8vv3/U9DN144EHmDTNHLf88xcvn88Y/WobPUfHV2WEmg6daAHGZ7hufoFzXnA8e+KBffaf7Wzz/qii+X9NuK6vwl4y17xD4ugtbj7OtskbvKII8Z44yST3Irsy7i3A4/E06FOvXUpPlSahZ36t2drbsxxOTYjD0pVJU4NJXv72nlucn41/tY+LpW1mO2S4Ma4FuSV2845PPr1rrfhN/x7at/vx/yauf+JTq/jx1BzsgjB/U/1roPhN/x7at/vx/yavncip+z4zlDmbtKpq937stz08fLmyRStbSP5o4jxV/yPGrf9fT/AM6y4YXuLmO3jGXlcIo9ycf1rsfEHg3xLe+KtRu7bTHeGWdnRhIg3Anryap+E9GuV+JVrYXsJjltXMsqEg7doyOnuVr5jG5FjKmbOFWlKMalWybTSd5dG/LU9WhmFGOD5oTTcYXsmuiPTtZ1OPw3ounRoQE+0Q2v/AM4b9BXN/FWx36VYaioz5UpiY+zDI/Vf1rpPE3hiHxLDbxT3s9usDFh5QBySMZOfT+tM8Y6ebz4f3tvkySRRCUMRySmDn9D+dftWf4DE4vB47Dzj+65I+z1W8U29OmqSPhcuxFKjWoVE/eu+b0en5XMn4W/8ihc/wDX03/oK0aJ4L1TTfFq6rNrW+EO7GFN3zBs4BycY5/Sj4Wc+D7j/r7b/wBBWo9L/wCFif8ACVR/bR/xLvObf5nl48vJ6Y5zjGK8rK4Yd5Zlkq1Gc2vhcL2i7rWVmtPW+zOzFuosVilCcYp73tr5LTcwfincxS+I7S1UHfDAS5xj7xyB+n61wlejfFf7P9q0zG37Ttk3euzIx+uf1rzmvyvjqLjnmI5nfVbf4VZfI+t4faeAp2Xf82FFFFfJHshRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAHX+FfHU2gWP9nXlqbq0BJTawDx56jngj2rf/4WB4T7+Hpf+/EX+NeY0V9ZguNc1wlCOHhNOMdFzRTsu12ePXyLCVqjqtNN72bR6d/wsDwl/wBC9L/34i/xo/4WB4S/6F6X/vxF/jXmNFdX/EQM1/uf+AIx/wBXMJ/e+9np3/CwPCX/AEL0v/fiL/GmyfEvRrWB/wCytDkSVh/EEjX8duSa8zoofiBm6Xuyin3UI3/IP9XMH1TfzZZ1C+udT1Oa/u33zTNuY9voPYdK2PDHi268MR3KW9nFceeVJMjFcYz6fWueor5nC5pisLifrlGbVTV33eu+997nq1cJRq0vYTj7umnpsegf8LW1H/oEWv8A38asWx8ZXFl4tvtfGnwPNdLt2M5AQcZwfwFczRXqV+L83ryhOrXbcHdaR0dmr7dmzkp5Lgqako07XVnq9vvNzV/Fer6tqz3q3U9orAKIYJmCrgfWtPTPiDqVhog02e0jvl+YGWeVizBux/OuQormo8SZnRrzxMKz55Xu9731ej0/A1nleFnTVKUFZbf8PudR4b8bXfhvSpLG3sIJleUy7ncgjIAxx9K1ZPirqzRkR6ZZox6MWZsfhXBUV04bi/N8LRjh6NdxhFWSstF9xlVybBVZupOndvzf+Za1HUr3VtRe+1CYyzv1J4AHYAdhVWiivn6tadabqVG3J6tvds9KEIwioxVkgooorMoKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//Z" alt="Burger Lab" />
+        <span>Burger Lab</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">Nosotros</a>
+        <a href="#menu">Carta</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <div class="hero-mid">
+      <div class="hero-heading-wrap fade" id="heroH1">
+        <h1 class="hero-heading">Burger Lab</h1>
+      </div>
+      <div class="hero-portrait">
+        <div class="magnet" id="magnet">
+          <div class="burger-rig">
+            <div class="layer" data-part="bun-bottom" style="top:64%; z-index:1">
+              <svg viewBox="0 0 400 160"><path d="M20 40 Q200 -10 380 40 L380 130 Q200 150 20 130 Z" fill="#c98a3d"/></svg>
+            </div>
+            <div class="layer" data-part="lettuce" style="top:54%; z-index:2">
+              <svg viewBox="0 0 400 60"><path d="M10 30 Q40 5 70 30 Q100 5 130 30 Q160 5 190 30 Q220 5 250 30 Q280 5 310 30 Q340 5 370 30 L390 45 L10 45 Z" fill="#5f7d3d"/></svg>
+            </div>
+            <div class="layer" data-part="tomato" style="top:46%; z-index:3">
+              <svg viewBox="0 0 400 30"><circle cx="70" cy="15" r="13" fill="#c1272d"/><circle cx="150" cy="15" r="13" fill="#c1272d"/><circle cx="230" cy="15" r="13" fill="#c1272d"/><circle cx="310" cy="15" r="13" fill="#c1272d"/></svg>
+            </div>
+            <div class="layer" data-part="patty" style="top:38%; z-index:4">
+              <svg viewBox="0 0 400 55"><rect x="20" y="6" width="360" height="40" rx="18" fill="#5a3720"/></svg>
+            </div>
+            <div class="layer" data-part="cheese" style="top:30%; z-index:5">
+              <svg viewBox="0 0 400 40"><path d="M20 8 L380 8 L360 34 Q200 50 40 34 Z" fill="#f5a300"/></svg>
+            </div>
+            <div class="layer" data-part="bacon" style="top:22%; z-index:6">
+              <svg viewBox="0 0 400 34"><path d="M30 6 Q70 26 110 6 Q150 26 190 6 Q230 26 270 6 Q310 26 350 6" stroke="#8f2f22" stroke-width="12" fill="none" stroke-linecap="round"/></svg>
+            </div>
+            <div class="layer" data-part="bun-top" style="top:6%; z-index:7">
+              <svg viewBox="0 0 400 170">
+                <path d="M20 150 Q10 30 200 15 Q390 30 380 150 Z" fill="#e0a04a"/>
+                <circle cx="140" cy="60" r="5" fill="#faf3e6"/><circle cx="200" cy="42" r="5" fill="#faf3e6"/>
+                <circle cx="260" cy="60" r="5" fill="#faf3e6"/><circle cx="170" cy="90" r="5" fill="#faf3e6"/>
+                <circle cx="230" cy="90" r="5" fill="#faf3e6"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-tag"><span>scroll</span><span class="bar"></span></div>
+    </div>
+
+    <div class="hero-bottom">
+      <p class="fade" id="heroP">Fórmulas de hamburguesa creadas con calma, ingrediente por ingrediente, en Curicó.</p>
+      <div class="icon-row fade" id="heroBtns">
+        <button type="button" class="icon-btn cart-btn" id="cartBtn" aria-label="Ver carrito" title="Carrito">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <a class="icon-btn" href="https://wa.me/56939265106?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Burger%20Lab" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.29-.15-1.7-.84-1.97-.93-.26-.1-.46-.15-.65.14-.2.3-.75.94-.92 1.13-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.32-1.43-.86-.76-1.44-1.7-1.6-1.99-.17-.3-.02-.46.13-.6.13-.13.3-.34.44-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.51-.08-.15-.65-1.56-.89-2.14-.24-.57-.48-.49-.65-.5h-.56c-.2 0-.5.07-.77.37-.26.3-1 1-1 2.42 0 1.43 1.03 2.82 1.18 3.01.15.2 2.03 3.1 4.92 4.35.69.3 1.22.48 1.64.61.69.22 1.32.19 1.81.11.55-.08 1.7-.7 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.2-.55-.34Z"/><path d="M12 2a10 10 0 0 0-8.62 15.1L2 22l5.05-1.32A10 10 0 1 0 12 2Zm0 18.2a8.17 8.17 0 0 1-4.17-1.14l-.3-.18-3 .78.8-2.92-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+        </a>
+        <a class="icon-btn solid" href="https://instagram.com/burgerlab.cl" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee">
+    <div class="m-row" id="row1" style="margin-bottom:12px"></div>
+    <div class="m-row" id="row2"></div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="corner fade dx" data-corner style="top:4%; left:2%; width:min(120px,14vw)">🧫</div>
+    <div class="corner fade dxr" data-corner style="top:4%; right:2%; width:min(120px,14vw)">🍔</div>
+    <div class="corner fade dx" data-corner style="bottom:6%; left:4%; width:min(100px,12vw)">🧪</div>
+    <div class="corner fade dxr" data-corner style="bottom:6%; right:4%; width:min(110px,13vw)">🔥</div>
+
+    <h2 class="hero-heading fade" id="aboutH">Nosotros</h2>
+    <p class="about-text" id="aboutText">Burger Lab nació en mayo de 2020 en Curicó, con la idea de tratar cada receta como un experimento de laboratorio. Empezamos con una sola fórmula y una freidora prestada; hoy, después de miles de pedidos, seguimos activos y creciendo, con una carta que no para de evolucionar y una comunidad de clientes que vuelve semana tras semana. Seguimos probando ingredientes, ajustando proporciones y repitiendo hasta dar con la fórmula exacta. ¡Pide la tuya hoy!</p>
+    <a class="cta-pill fade" id="aboutBtn" href="https://wa.me/56939265106?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Burger%20Lab" target="_blank" rel="noopener">Pedir ahora</a>
+
+    <div class="about-stats fade">
+      <div><b>2020</b><span>Año de fundación</span></div>
+      <div><b>+15.000</b><span>Hamburguesas entregadas</span></div>
+      <div><b>4.8★</b><span>Calificación en Google</span></div>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <h2>Proceso</h2>
+    <div id="processList"></div>
+  </section>
+
+  <section class="menu-stack-section" id="menu">
+    <h2 class="hero-heading">Carta</h2>
+
+    <div class="quick-nav">
+      <a href="#menu-burgers">🍔 Hamburguesas</a>
+      <a href="#menu-extras">🍟 Extras</a>
+      <a href="#menu-agregados">➕ Agregados</a>
+    </div>
+
+    <div id="menu-burgers" class="menu-jump-target">
+      <div id="menuCategories"></div>
+    </div>
+
+    <div class="extras-wrap">
+      <div class="extras-col fade menu-jump-target" id="menu-extras">
+        <h3>✕ Extras</h3>
+        <div id="extrasList" class="price-list"></div>
+      </div>
+      <div class="extras-col fade menu-jump-target" id="menu-agregados">
+        <h3>✚ Agregados</h3>
+        <div id="agregadosList" class="price-list"></div>
+      </div>
+    </div>
+
+    <p class="note-tag">Todas las burgers incluyen papas fritas</p>
+  </section>
+
+  <section class="reviews" id="opiniones">
+    <h2 class="hero-heading">Opiniones</h2>
+    <p class="reviews-sub">Esto es lo que dicen quienes ya probaron Burger Lab.</p>
+    <div class="reviews-marquee">
+      <div class="reviews-track" id="reviewsGrid"></div>
+    </div>
+    <a class="ghost-btn reviews-cta" href="https://www.google.com/maps/place/Burgerlab/@-34.96662,-71.2312745,758m/data=!3m1!1e3!4m8!3m7!1s0x966457eccf79263b:0xbd1dbf48596bece8!8m2!3d-34.96662!4d-71.2312745!9m1!1b1!16s%2Fg%2F11jt6dhqy9?entry=ttu&g_ep=EgoyMDI2MDgwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Ver reseñas en Google Maps →</a>
+  </section>
+
+  <section class="opina-section" id="opina">
+    <h2 class="hero-heading">Tu experiencia</h2>
+    <p class="reviews-sub">Cuéntanos qué te pareció, calificanos en Google Maps.</p>
+    <a class="cta-pill opina-gmaps-btn" href="https://www.google.com/maps/place/Burgerlab/@-34.96662,-71.2312745,758m/data=!3m1!1e3!4m8!3m7!1s0x966457eccf79263b:0xbd1dbf48596bece8!8m2!3d-34.96662!4d-71.2312745!9m1!1b1!16s%2Fg%2F11jt6dhqy9?entry=ttu&g_ep=EgoyMDI2MDgwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
+      ⭐ Déjanos tu opinión en Google Maps
+    </a>
+  </section>
+
+  <section class="map-section" id="ubicacion">
+    <h2 class="hero-heading">Ubicación</h2>
+    <p class="reviews-sub">Descubre Burger Lab en Google Maps.</p>
+    <div class="map-card">
+      <iframe
+        class="map-embed"
+        src="https://www.google.com/maps?q=Burgerlab,San%20Francisco,Curic%C3%B3,Chile&z=16&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación de Burger Lab en Google Maps">
+      </iframe>
+      <a class="map-overlay" href="https://www.google.com/maps/place/Burgerlab/@-34.96662,-71.2312745,758m/data=!3m1!1e3!4m16!1m9!3m8!1s0x966457eccf79263b:0xbd1dbf48596bece8!2sBurgerlab!8m2!3d-34.96662!4d-71.2312745!9m1!1b1!16s%2Fg%2F11jt6dhqy9!3m5!1s0x966457eccf79263b:0xbd1dbf48596bece8!8m2!3d-34.96662!4d-71.2312745!16s%2Fg%2F11jt6dhqy9?entry=ttu&g_ep=EgoyMDI2MDgwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">📍 Descubre Burger Lab en Google Maps →</a>
+    </div>
+  </section>
+
+  <section class="pay-section" id="pago">
+    <h2 class="hero-heading">Métodos de pago</h2>
+    <div class="pay-grid">
+      <div class="pay-card">
+        <div class="pay-icon">💵</div>
+        <h3>Efectivo</h3>
+        <p>Paga al recibir tu pedido, sin complicaciones.</p>
+      </div>
+      <div class="pay-card">
+        <div class="pay-icon">💳</div>
+        <h3>Transbank</h3>
+        <p>Débito o crédito con POS al momento de la entrega.</p>
+      </div>
+      <div class="pay-card">
+        <div class="pay-icon">🏦</div>
+        <h3>Transferencia electrónica</h3>
+        <p class="pay-bank">
+          Burgerlab SPA<br>
+          Rut 77.168.179-4<br>
+          Cuenta Corriente Santander<br>
+          N.º 76415692
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-contact">
+      <div><span class="fc-label">Dirección</span><a href="https://www.google.com/maps/search/?api=1&query=C.+Cinco+0247+Curic%C3%B3+Maule" target="_blank" rel="noopener">C. Cinco 0247, 3340104 Curicó, Maule</a></div>
+      <div><span class="fc-label">Teléfono</span><a href="tel:+56939265106">+56 9 3926 5106</a></div>
+      <div><span class="fc-label">Correo</span><a href="mailto:burgerlabchile@gmail.com">burgerlabchile@gmail.com</a></div>
+    </div>
+    <p class="footer-copy">Burger Lab © 2026 — Curicó, Chile · @burgerlab.cl</p>
+  </footer>
+</div>
+
+<div class="cart-toast" id="cartToast"><span class="tick">✓</span> <span id="cartToastText">Agregado al carrito</span></div>
+
+<div class="cart-overlay" id="cartOverlay">
+  <div class="cart-panel">
+    <div class="cart-panel-head">
+      <h3>Tu pedido</h3>
+      <button type="button" class="cart-close" id="cartClose" aria-label="Cerrar carrito">✕</button>
+    </div>
+    <div class="cart-items" id="cartItemsList"></div>
+    <p class="cart-empty" id="cartEmpty">Aún no agregas nada. Toca “+” en la carta para sumar productos.</p>
+    <div class="cart-total-row"><span>Total</span><b id="cartTotal">$0</b></div>
+    <a class="cta-pill cart-checkout" id="cartCheckout" href="https://wa.me/56939265106" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+  </div>
+</div>
+
+<script>
+  const CORNER_ICONS = { style: 'font-size: inherit' };
+
+  /* ---------- generic fade-in on view ---------- */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.15 });
+  function setupFades(){
+    document.querySelectorAll('.fade').forEach(el => io.observe(el));
+    document.querySelectorAll('[data-corner]').forEach(el => {
+      el.style.fontSize = el.style.width;
+      io.observe(el);
+    });
+  }
+
+  /* ---------- Magnet effect ---------- */
+  const magnet = document.getElementById('magnet');
+  const magnetPad = 150, magnetStrength = 3;
+  window.addEventListener('pointermove', (e)=>{
+    const rect = magnet.getBoundingClientRect();
+    const cx = rect.left + rect.width/2, cy = rect.top + rect.height/2;
+    const dx = e.clientX - cx, dy = e.clientY - cy;
+    const dist = Math.sqrt(dx*dx+dy*dy);
+    if(dist < rect.width/2 + magnetPad){
+      magnet.style.transition = 'transform 0.3s ease-out';
+      magnet.style.transform = `translate3d(${dx/magnetStrength}px, ${dy/magnetStrength}px, 0)`;
+    } else {
+      magnet.style.transition = 'transform 0.6s ease-in-out';
+      magnet.style.transform = 'translate3d(0,0,0)';
+    }
+  }, {passive:true});
+
+  /* ---------- Marquee ---------- */
+  const row1Items = ['🍔 Cheese','💪 Hulk','🥑 Bosboni','🧀 Classic','🇮🇹 Italiana','🥒 Cuarto Burges','🥗 La Ronco','🍄 La Fresca'];
+  const row2Items = ['🍳 Huevona a lo Pobre','🧨 Mata Caña','🍯 Supreme','🌮 Órale Wey','🌶️ Picante','🫑 Jalapeña','🦐 Bubba Camarona'];
+  const tileColors = ['#f5a300','#c1272d','#ffcf6b','#8a4b23','#e9c37e'];
+
+  function buildRow(container, items){
+    const tripled = [...items, ...items, ...items];
+    tripled.forEach((label,i) => {
+      const [emoji, ...rest] = label.split(' ');
+      const tile = document.createElement('div');
+      tile.className = 'm-tile';
+      tile.style.background = tileColors[i % tileColors.length];
+      tile.innerHTML = `<span class="emoji">${emoji}</span><span>${rest.join(' ')}</span>`;
+      container.appendChild(tile);
+    });
+  }
+  const row1 = document.getElementById('row1');
+  const row2 = document.getElementById('row2');
+  buildRow(row1, row1Items);
+  buildRow(row2, row2Items);
+
+  const marqueeSection = document.querySelector('.marquee');
+  function onMarqueeScroll(){
+    const rect = marqueeSection.getBoundingClientRect();
+    const sectionTop = rect.top + window.scrollY;
+    const offset = (window.scrollY - sectionTop + window.innerHeight) * 0.3;
+    row1.style.transform = `translateX(${offset - 200}px)`;
+    row2.style.transform = `translateX(${-(offset - 200)}px)`;
+  }
+
+  /* ---------- About: simple reliable fade-in ---------- */
+  document.getElementById('aboutText').classList.add('fade');
+  io.observe(document.getElementById('aboutText'));
+
+  /* ---------- Process list ---------- */
+  const processList = document.getElementById('processList');
+  const steps = [
+    ['01','Selección de ingredientes','Elegimos carne, pan y vegetales frescos cada mañana, probando cada lote antes de usarlo.'],
+    ['02','Formulación','Ajustamos proporciones de queso, salsas y condimentos hasta lograr el equilibrio exacto de cada receta.'],
+    ['03','Sellado a la parrilla','Cocinamos la carne al punto justo, sellando los jugos y el sabor de cada fórmula.'],
+    ['04','Ensamblaje','Montamos capa por capa siguiendo el orden que mejor conserva textura y temperatura.'],
+    ['05','Entrega','Empacamos y despachamos rápido para que llegue caliente, tal como sale del laboratorio.'],
+  ];
+  steps.forEach(([num,title,desc], i) => {
+    const item = document.createElement('div');
+    item.className = 'p-item fade';
+    item.style.transitionDelay = (i*0.08)+'s';
+    item.innerHTML = `<div class="num">${num}</div><div class="body"><h3>${title}</h3><p>${desc}</p></div>`;
+    processList.appendChild(item);
+  });
+
+  /* ---------- Menu (real carta) ---------- */
+  const menuCategories = [
+    { name:'Básica', prices:[['','6.990']], items:[
+      ['Cheese','Carne, queso americano, salsa LAB.'],
+    ]},
+    { name:'Única', prices:[['','11.990']], items:[
+      ['Hulk','4 carnes smash, 4 quesos americanos, tocino, pepinos dulces, salsa LAB.'],
+      ['Bosboni','Carne, queso americano, coleslaw casero, media palta, aros de cebolla, salsa LAB.'],
+    ]},
+    { name:'Clásica', prices:[['Simple','8.990'],['Doble','10.990']], items:[
+      ['Classic','Carne, queso americano, cebolla morada, lechuga, tomate, tocino crocante, salsa LAB.'],
+      ['Italiana','Carne, palta, tomate, mayo.'],
+      ['Cuarto Burges','Carne, queso americano, cebolla picada, pepinos dulces, salsa LAB.'],
+      ['La Ronco','Carne, queso americano, coleslaw casero, pepinos dulces, salsa LAB.'],
+      ['La Fresca','Carne, queso americano, cebolla encurtida, champiñones, mayo ciboulette.'],
+      ['Huevona a lo Pobre','Carne, queso americano, cebolla crocante, huevo frito, champiñones, salsa LAB.'],
+    ]},
+    { name:'Especial', prices:[['Simple','9.490'],['Doble','11.490']], items:[
+      ['Mata Caña','Carne, queso americano, queso mantecoso, aros de cebolla, cebolla crocante, salsa LAB.'],
+      ['Supreme','Carne, queso americano, cebolla caramelizada, pepinos dulces, mostaza triple crunch, mayo ciboulette.'],
+      ['Órale Wey','Carne, queso mantecoso, guacamole, mayo ciboulette, ají verde encurtido.'],
+      ['Picante','Carne, queso americano, tocino crocante, cebolla crocante, pepinos dulces, salsa picante.'],
+      ['Jalapeña','Carne, queso americano, tomate, lechuga, cebolla crocante, jalapeños, mayo ciboulette.'],
+      ['Bubba Camarona','Carne, queso crema, camarones, tomate grillado, mayo ciboulette.'],
+    ]},
+  ];
+
+  const menuCategoriesEl = document.getElementById('menuCategories');
+  menuCategories.forEach(cat => {
+    const catEl = document.createElement('div');
+    catEl.className = 'menu-cat fade';
+    const priceTags = cat.prices.map(([lbl,amt]) =>
+      `<div class="price-tag">${lbl ? `<span class="lbl">${lbl}</span>`:''}<span class="amt">$${amt}</span></div>`
+    ).join('');
+    catEl.innerHTML = `
+      <div class="menu-cat-head">
+        <h3>${cat.name}</h3>
+        <div class="price-tags">${priceTags}</div>
+      </div>`;
+    cat.items.forEach(([tag,desc], i) => {
+      const item = document.createElement('div');
+      item.className = 'menu-item';
+      item.style.transitionDelay = (i*0.06)+'s';
+      const addBtns = cat.prices.map(([lbl,amt]) => {
+        const fullName = tag + (lbl ? ` (${lbl})` : '');
+        const priceNum = parseInt(amt.replace(/\./g,''), 10);
+        return `<button type="button" class="add-btn" data-name="${fullName}" data-price="${priceNum}">${lbl ? lbl+' ' : ''}+ $${amt}</button>`;
+      }).join('');
+      item.innerHTML = `<div class="mi-head"><span class="badge">${tag}</span><div class="mi-add">${addBtns}</div></div><p>${desc}</p>`;
+      catEl.appendChild(item);
+      io.observe(item);
+    });
+    menuCategoriesEl.appendChild(catEl);
+    io.observe(catEl);
+  });
+
+  const extras = [
+    ['Porción papas extra 140 gr.','1.790'],['Caja de papas 400 gr.','3.990'],
+    ['Porción 6 aros','2.000'],['Porción 5 palitos de queso','2.990'],
+    ['Pack fritos: 6 aros + 5 palitos de queso','4.500'],
+    ['Nuggets x3','1.500'],['Nuggets x6','2.490'],['Nuggets x12','4.490'],
+    ['Empanadas x3','1.490'],['Empanadas x6','2.190'],['Empanadas x12','3.790'],
+    ['Bebida lata 350 cc.','1.500'],['Bebida desechable 1,5 lts.','3.000'],
+    ['Guayarauco 1 lt. Mango Maracuyá','2.200'],['Guayarauco 1 lt. Manzana Pera','2.200'],
+    ['Guayarauco Agua Manzana 500 cc.','1.500'],['Guayarauco Agua Mango Maracuyá 500 cc.','1.500'],
+    ['Guayarauco Agua Pera 500 cc.','1.500'],
+    ['Delivery Boldo + Rauquén cercano','1.500'],['Delivery Tramo 1','2.000'],
+    ['Delivery Tramo 2','2.700'],['Delivery Tramo 3','3.700'],['Delivery Tramo 4','4.700'],
+  ];
+  const agregados = [
+    ['Carne extra','2.000'],['Palta','1.500'],['Tocino','1.500'],['Guacamole','1.500'],
+    ['Cebolla caramelizada','1.500'],['Camarones','1.500'],['Coleslaw','1.500'],['Champiñones','1.500'],
+    ['Aros de cebolla','1.000'],['Queso Crema','1.000'],['Mostaza triple crunch','1.000'],
+    ['Jalapeños','900'],['Cebolla crocante','900'],['Ají verde encurtidos','900'],['Cebolla encurtida','900'],
+    ['Pepinos dulces','800'],['Huevo','800'],['Cebolla blanca o morada','700'],['Queso americano','700'],
+    ['Queso mantecoso','700'],['Salsa, Mayonesa o Ketchup','700'],['Tomate','700'],['Lechuga','500'],
+  ];
+  function fillPriceList(id, data){
+    const el = document.getElementById(id);
+    data.forEach(([label,price]) => {
+      const row = document.createElement('div');
+      row.className = 'price-row';
+      const priceNum = parseInt(price.replace(/\./g,''), 10);
+      row.innerHTML = `<span>${label}</span><div class="pr-right"><b>$${price}</b><button type="button" class="add-btn small" data-name="${label}" data-price="${priceNum}" aria-label="Agregar ${label}">+</button></div>`;
+      el.appendChild(row);
+    });
+  }
+  fillPriceList('extrasList', extras);
+  fillPriceList('agregadosList', agregados);
+
+  /* ---------- Cart ---------- */
+  let cart = [];
+  const cartOverlay = document.getElementById('cartOverlay');
+  const cartBtn = document.getElementById('cartBtn');
+  const cartClose = document.getElementById('cartClose');
+  const cartBadge = document.getElementById('cartBadge');
+  const cartItemsList = document.getElementById('cartItemsList');
+  const cartEmpty = document.getElementById('cartEmpty');
+  const cartTotal = document.getElementById('cartTotal');
+  const cartCheckout = document.getElementById('cartCheckout');
+  const cartToast = document.getElementById('cartToast');
+  const cartToastText = document.getElementById('cartToastText');
+  const WHATSAPP_NUMBER = '56939265106';
+  let toastTimer = null;
+
+  function showToast(text){
+    cartToastText.textContent = text;
+    cartToast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => cartToast.classList.remove('show'), 1600);
+  }
+  function bumpBadge(){
+    cartBadge.classList.remove('bump');
+    void cartBadge.offsetWidth;
+    cartBadge.classList.add('bump');
+    setTimeout(() => cartBadge.classList.remove('bump'), 250);
+  }
+
+  function fmtCLP(n){ return n.toLocaleString('es-CL'); }
+
+  function addToCart(name, price){
+    const existing = cart.find(c => c.name === name);
+    if(existing){ existing.qty += 1; } else { cart.push({name, price, qty:1}); }
+    renderCart();
+    showToast(`“${name}” agregado al carrito`);
+    bumpBadge();
+  }
+  function changeQty(name, delta){
+    const existing = cart.find(c => c.name === name);
+    if(!existing) return;
+    existing.qty += delta;
+    if(existing.qty <= 0) cart = cart.filter(c => c.name !== name);
+    renderCart();
+  }
+  function renderCart(){
+    const count = cart.reduce((s,c) => s+c.qty, 0);
+    cartBadge.textContent = count;
+    cartBadge.classList.toggle('hidden', count === 0);
+    cartItemsList.innerHTML = '';
+    cartEmpty.classList.toggle('hidden', cart.length > 0);
+    let total = 0;
+    cart.forEach(c => {
+      total += c.price * c.qty;
+      const row = document.createElement('div');
+      row.className = 'cart-row';
+      row.innerHTML = `
+        <div>
+          <div class="ci-name">${c.name}</div>
+          <div class="ci-price">$${fmtCLP(c.price)} c/u</div>
+        </div>
+        <div class="cart-qty">
+          <button type="button" data-action="dec" data-name="${c.name}">−</button>
+          <span>${c.qty}</span>
+          <button type="button" data-action="inc" data-name="${c.name}">+</button>
+        </div>`;
+      cartItemsList.appendChild(row);
+    });
+    cartTotal.textContent = '$' + fmtCLP(total);
+    const lines = cart.map(c => `• ${c.qty}x ${c.name} — $${fmtCLP(c.price*c.qty)}`).join('\n');
+    const msg = cart.length
+      ? `Hola, quiero hacer este pedido:\n${lines}\n\nTotal: $${fmtCLP(total)}`
+      : 'Hola, quiero hacer un pedido en Burger Lab';
+    cartCheckout.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+  }
+
+  document.addEventListener('click', (e) => {
+    const addBtn = e.target.closest('.add-btn');
+    if(addBtn){
+      addToCart(addBtn.dataset.name, parseInt(addBtn.dataset.price, 10));
+      return;
+    }
+    const qtyBtn = e.target.closest('.cart-qty button');
+    if(qtyBtn){
+      changeQty(qtyBtn.dataset.name, qtyBtn.dataset.action === 'inc' ? 1 : -1);
+    }
+  });
+
+  cartBtn.addEventListener('click', () => cartOverlay.classList.add('open'));
+  cartClose.addEventListener('click', () => cartOverlay.classList.remove('open'));
+  cartOverlay.addEventListener('click', (e) => { if(e.target === cartOverlay) cartOverlay.classList.remove('open'); });
+
+  renderCart();
+
+  /* ---------- Reviews (reales, de Google Maps) — carrusel continuo ---------- */
+  function stars(n){ return '★'.repeat(n) + '☆'.repeat(5-n); }
+  const reviewsData = [
+    [5, 'Las hamburguesas exquisitas, realmente muy buenas, el tamaño y los ingredientes excelentes.', 'Marce R', 'Hace 1 año'],
+    [5, '…hamburguesas por mucho de Curicó, sabor único y muyyyyyy buenas para llenar el estómago…', 'Diego Chacon', 'Hace 2 años'],
+    [4, 'Hamburguesa 8.5/10: me gustó mucho el sabor, pero siento que usaban muy poca sal (en mi humilde opinión)…', 'cote yera', 'Hace 6 meses'],
+    [5, 'Muy rico el local, un poco chico pero está todo en buen estado.', 'alexander espinoza', 'Hace 1 año'],
+    [4, 'Muy rico, el precio un poco elevado, pero vale la pena disfrutar de sus hamburguesas. El pan exquisito.', 'rodolfo navarro', 'Hace 2 años'],
+    [4, 'Bastante buena, tamaño de las hamburguesas menor al que pensaba pero la calidad sumamente buena.', 'Camilo Bastián Piña Castro', 'Hace 1 año'],
+    [5, 'Muy bueno, lo único malo es que no hay donde sentarse a comer, pero por lo demás 10/10.', 'Rodrigo Hernandez', 'Hace 1 año'],
+    [5, 'Excelentes productos, y servicios muy eficientes.', 'Tomas Medina', 'Hace 2 años'],
+    [5, 'Es para llevar, las hamburguesas riquísimas. Creo que son las mejores en Curicó.', 'Nayibe Marquez Rondon', 'Hace 3 años'],
+    [5, 'Muy ricas las hamburguesas, y una excelente atención por el personal.', 'Camila Escaida Espinoza', 'Hace 3 años'],
+    [5, 'Calidad y buen sabor.', 'Luis Miguel Valenzuela Tapia', 'Hace 1 año'],
+    [5, 'Felicidades, encontraste las mejores burgers de Curiyork.', 'Märtin Silva', 'Hace 1 año'],
+    [5, 'Muy rica la hamburguesa. Servicio rápido.', 'efpf13', 'Hace 2 años'],
+    [5, 'Sin duda alguna, las mejores hamburguesas de la ciudad de Curicó.', 'Cesar Mago', 'Hace 3 años'],
+    [5, 'Las mejores hamburguesas de Curicó por lejos.', 'pablo godoy', 'Hace 2 años'],
+    [5, 'Las mejores hamburguesas de Curicó.', 'Rodrigo Moreno', 'Hace 3 años'],
+    [5, 'Maravillosas, riquísimas...', 'Pame Bravo', 'Hace 3 años'],
+  ];
+  const reviewsGrid = document.getElementById('reviewsGrid');
+  function buildReviewCard([rating, text, who, date]){
+    const card = document.createElement('div');
+    card.className = 'review-card';
+    card.innerHTML = `<div class="stars">${stars(rating)}</div><p>${text}</p><div class="who">${who}<span class="date">${date}</span></div>`;
+    return card;
+  }
+  // se duplica la lista para que el carrusel sea infinito y sin cortes
+  [...reviewsData, ...reviewsData].forEach(r => reviewsGrid.appendChild(buildReviewCard(r)));
+
+  /* ---------- master scroll loop ---------- */
+  let ticking = false;
+  function onScroll(){
+    onMarqueeScroll();
+    ticking = false;
+  }
+  window.addEventListener('scroll', () => {
+    if(!ticking){ requestAnimationFrame(onScroll); ticking = true; }
+  }, {passive:true});
+  window.addEventListener('resize', onScroll);
+
+  setupFades();
+  onScroll();
+</script>
+</body>
+</html>
